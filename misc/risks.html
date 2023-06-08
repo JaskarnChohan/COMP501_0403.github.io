@@ -1,35 +1,122 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-  <title>risks</title>
+  <title>AI Art - Risks</title>
   	<link rel="stylesheet" href="../styles/mystyles.css">
   </head>
 
 <body>
-<img src="../images/csg4ed-small.png" alt="Enhancing Social Good in Computing"
 <!-- Site navigation menu -->
-
-<ul class="navbar">
-  <li><a href="../index.html">Home page</a>
-  <li><a href="topic.html">Technology/Topic</a>
-	<li><a href="opportunities.html">Opportunities</a>
-	<li><a href="misc/risks.html">Risks</a>
-	<li><a href="choices.html">Choices</a>
-	<li><a href="ethics.html">Ethical Reflections</a>
-	<li><a href="references.html">References</a>
-   <li><a href="process.html">Process Support</a>
-</ul>
+<h1 class="topic">The Benefits and Issues of AI Art</h1>
+<nav>
+  <ul class="navbar">
+    <li><a href="../index.html">Home page</a></li>
+    <li><a href="topic.html">Technology/Topic</a></li>
+    <li><a href="opportunities.html">Opportunities</a></li>
+    <li><a href="risks.html">Risks</a></li>
+    <li><a href="choices.html">Choices</a></li>
+    <li><a href="ethics.html">Ethical Reflections</a></li>
+    <li><a href="references.html">References</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn"
+        >Process Support &#9662;</a
+      >
+      <div class="dropdown-content">
+        <a href="team-formation.html">Team Formation</a>
+        <a href="proposal.html">Topic Proposal</a>
+        <a href="evaluation.html">Peer Evaluation</a>
+        <a href="meetings.html">Meeting Minutes</a>
+        <a href="portfolio.html">Project Portfolio</a>
+        <a href="rubric.html">Assessment Rubric</a>
+        <a href="guidelines.html">Guideline Conformance</a>
+      </div>
+    </li>
+  </ul>
+</nav>
 
 <!-- Main content -->
-<h1>Technology Risks</h1>
+<h1 class="page-heading">Risks</h1>
 
+  <main>
+    <section>
+      <p>There are many risks associated with AI generated art and images. With any emerging technology,
+        there are many kinks to iron out. Like how the datasets these machine-learning algorithms are
+        taught on may contain biases that are unwittingly reflected by the AI, how the convincing quality of
+        the images could bring about a misinformation crisis, and how difficult defining ownership and
+        resolving copyright issues can be when dealing with AI generated content. These risks need to be
+        figured out before this technology is used on a mass commercial scale.</p>
+    </section>
 
-</ul><h4><p>The page or area describing the risks posed by your chosen technology/topic.<p></h4>
+    <section>
+      <h3 class="section-heading">Inherited Bias</h3>
+      <p>Modern generative AI that creates art are trained off billions of images scraped from every corner of
+        the internet. However, this means that the archived biases of the internet, past and present, are
+        inherited by these AI. Long-standing societal biases and stereotypes that exist on the internet
+        influence generative AI, potentially favoring one ethnicity, gender, or sexual orientation over others
+        (Vartiainen &amp; Tedre, 2023). For example, most art and visual media on the internet are of the
+        Western/European world and as a result, the algorithm will inadvertently generate art with content
+        that is biased towards the Western gaze (Chen, Fu &amp; Lyu, 2023). This means when an AI is told to
+        generate a painting of someone “beautiful” or “perfect”, it is more likely to create art more skewed
+        towards a Eurocentric interpretation of someone with beautiful or perfect features, ignoring
+        standards from other ethnicities and cultures around the world (Wells &amp; Jackson, 2022). Another
+        example of bias was when the DALL-E Mini was asked to generate images depicting jobs of high
+        education or high physical labor, like lawyers and engineers, were often represented by men. In
+        contrast, secretaries and nurses were often represented by women. In addition, those men and
+        women depicted were mostly white/Caucasian (Dayma, 2021). Ironically, while AI is meant to be an
+        unbiased machine capable of surpassing human thought, deep seated historical stereotypes and
+        biases are inherited from by these machine learning algorithms from their human creators and is a
+        problem that needs to be fixed if AI wants to progress any further.</p>
+    </section>
 
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 1 March 2021<br>
-  by Tony Clear.</address>
- 
-<p><em>thanks to W3C for tutorial and adapted code from <a href="https://www.w3.org/Style/Examples/011/firstcss.en.html">Style Examples</a></p></em>
-<p><em>also thanks to WDN for HTML and CSS resources and any adapted code snippets from <a href= "https://developer.mozilla.org/en-US/docs/Web">Mozilla Developer Network</a></p></em 
+    <section>
+      <h3 class="section-heading">Dangers of Misinformation</h3>
+      <p>AI art generators have gotten so good to the point where it’s getting difficult to tell whether an
+        image is real or not. While an impressive feat of human technology, it could prove dangerous in our
+        present social climate filled with misinformation and fake news. Not only will it be easier to
+        spread false information with falsified but convincing evidence, it will also lead to a public that will
+        become increasingly more sceptic as to what is real and what is not. People will begin to question
+        even the validity of images that are true (Kahn, 2023). This is a frightening thought in our world
+        where the public is already distrustful of modern media and journalism. For example, a video of
+        Ukraine’s president Volodymyr Zelenskiy telling Ukrainian soldiers to surrender to the Russian
+        military was spread online and quickly became viral. However, it turned out that the video was a
+        deepfake using machine learning and AI (Kramer, 2022). Or another example is the use of AI models
+        to generate pornographic content of celebrities and people in general. Of course, while the images
+        aren’t real, the convincing and realistic nature of the images have brought about concerns about
+        sexual consent and the potential harm it could do on the depicted person’s reputation and mental
+        health (Chen, Fu &amp; Lyu, 2023). This technology can be used by bad actors to spread lies and
+        potentially harm many people’s reputations at the click of a button.</p>
+    </section>
+
+    <section>
+      <h3 class="section-heading">Art Exploitation and Copyright Issues</h3>
+      <p>Most AI art generators create artwork based on text prompts, known as the ‘text-to-image’ model.
+        The way this is possible is because they are trained on datasets made up of images with alt-text in
+        their metadata (alt-text contains text which describes the contents of the image for when visually impaired people use the text-to-speech function on their computer). The images in these large
+        datasets are scraped from all across the internet, which due to the large scale of the collection,
+        ignored the copyrights and licenses to those images and artworks (Ghosh &amp; Fossas, 2022). The much
+        larger and newer LAION-5B is especially guilty of this issue, which artists have understandably
+        angered that their artwork and creative identity is effectively being taken without their permission.</p>
+      <p>There have also been many cases where AI art models, because their memorization of data is so
+        powerful, produce practically identical images from their training data which raises privacy and legal
+        concerns (Chen, Fu &amp; Lyu, 2023). For artists who want to protect their work from being used in AI
+        training data, there aren’t a lot of options under our current copyright laws.</p>
+      <p>Most AI models like Stable Diffusion and Midjourney are owned by for-profit companies who charge
+        users a subscription for access to the AI. While these companies claim their product is a tool for
+        artists, they siphon profits from what could have gone to human artists, while simultaneously selling
+        a product which could not have existed without those same human artists (Roose, 2022). While AI
+        would definitely not replace human artists completely, Art as a job would definitely become scanter
+        as more companies choose to hire fewer artists who can now use AI to output more art at the cost
+        of less artists; displacing many artists from potential or even current jobs and resulting in a lack of
+        varied artistic ideas due to the now small team of designers (Ghosh &amp; Fossas, 2022).</p>
+    </section>
+
+    <section>
+      <h3 class="section-heading">Summary</h3>
+      <p>Overall, AI Image generators are a new and rapidly evolving technology and the development
+        of AI and integration into commercial and creative industries is inevitable. However, the
+        irresponsible way it has been developed, the societal biases the AI inherits, the exploitation of
+        artists’ copyrighted work and the potential for fueling misinformation are all problems that need to
+        be fixed if the technology is to be ethically used on a mass scale.</p>
+    </section>
+  </main>
  </html>

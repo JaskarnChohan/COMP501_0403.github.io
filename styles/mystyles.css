@@ -1,32 +1,168 @@
-  body {
-   padding-left: 11em;
-   font-family: Georgia, "Times New Roman",
-          Times, serif;
-		  color: purple;
-    background-color: #d8da3d }
-	 ul.navbar {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-	position: absolute;
-    top: 2em;
-    left: 1em;
-    width: 10em }
-	h1 {
-    font-family: Helvetica, Geneva, Arial,
-          SunSans-Regular, sans-serif }
-		ul.navbar li {
-    background: white;
-    margin: 0.5em 0;
-    padding: 0.3em;
-    border-right: 1em solid black }
-  ul.navbar a {
-    text-decoration: none }
-  a:link {
-    color: blue }
-  a:visited {
-    color: purple }
-	address {
-    margin-top: 1em;
-    padding-top: 1em;
-    border-top: thin dotted }
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1.topic {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  background-color: #333;
+  color: #fff;
+  margin: 0px;
+}
+
+nav ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 25px 10px 25px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+nav ul.navbar li {
+  display: inline-block;
+}
+
+nav ul.navbar li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+nav ul.navbar li a:hover {
+  background-color: #ddd;
+}
+
+nav ul.navbar li.dropdown {
+  position: relative;
+}
+
+nav ul.navbar li.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav ul.navbar li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav ul.navbar li.dropdown .dropbtn:hover {
+  background-color: #ddd;
+}
+
+header {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+h1.main-heading {
+  font-size: 120px;
+  margin: 0;
+}
+
+h2.sub-heading {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+h1.page-heading {
+  text-align: center;
+  font-size: 42px;
+  margin: 30px 0;
+}
+
+.page-text {
+  text-align: center;
+  font-size: 20px;
+}
+
+main {
+  padding: 0px 35px 0px 35px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h3.section-heading {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.references-list {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.references-list li {
+  margin-bottom: 10px;
+}
+
+.references-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.references-list li a:hover {
+  color: #0066cc;
+}
+
+.team-table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.team-table th,
+.team-table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.team-table th {
+  background-color: #f2f2f2;
+}
+
+.team-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.team-table td:last-child {
+  border-right: none;
+}
+
+.team-table th:not(:last-child),
+.team-table td:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
